@@ -8,12 +8,13 @@ This project demonstrates hosting a dynamic landing page on an AWS EC2 instance 
 - [Steps I Took](#steps-i-took)
   - [Set Up EC2 Instance](#1-set-up-ec2-instance)
   - [Installed Nginx](#2-installed-nginx)
-  - [Configured Node.js Reverse Proxy](#3-configured-nodejs-reverse-proxy)
+  - [Configured Node.js Reverse Proxy](#3-configured-nodejs-reverse-proxy-bonus)
   - [Deployed the Landing Page](#4-deployed-the-landing-page)
   - [HTTPS with Let's Encrypt](#5-https-with-lets-encrypt-theoretical-bonus)
 - [Networking](#networking)
 - [Screenshots](#screenshots)
 - [Notes](#notes)
+- [Conclusion](#conclusion)
 
 ## Project Overview
 Built a static landing page using HTML and Tailwind CSS, hosted on an Ubuntu 24.04 AWS EC2 instance with Nginx. The page includes my name, role, project title, pitch, and bio. Nginx proxies '/api' requests to a Node.js app, and the site is accessible via the EC2 public IP (http://54.74.215.106) over HTTP.
@@ -182,7 +183,7 @@ Note: This is the public IP where the page is hosted.
 
 		•  Since no domain was used, the site runs on HTTP at `http://54.74.215.106`
 
-Networking
+### Networking
  -   Configured Security Group to allow:
 	 -  SSH (port 22): My IP
 	 -  HTTP (port 80): Anywhere (`0.0.0.0/0`)
@@ -193,7 +194,7 @@ Networking
 
 
 
-Screenshots
+### Screenshots
 	- Landing Page: Shows the rendered page at `http://54.74.215.106` (see `screenshots/landing-page-http.png`).
 	
 	- Node.js Response: Shows the API response at `http://54.74.215.106/api` (see `screenshots/node-api.png`)
