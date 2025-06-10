@@ -195,11 +195,11 @@ Note: This is the public IP where the page is hosted.
 
 
 ### Screenshots
-	### Landing Page: Shows the rendered page at `http://54.74.215.106` 
-  	![Landing Page] (landing-page-http.png)
+	Landing Page: Shows the rendered page at `http://54.74.215.106` 
+![Landing Page](landing-page-http.png)
 	
-	### Node.js Response: Shows the API response at `http://54.74.215.106/api` 
- 	![Node API] (node-api.png)
+	Node.js Response: Shows the API response at `http://54.74.215.106/api` 
+ ![Node API](node-api.png)
 
 
 ### Notes
